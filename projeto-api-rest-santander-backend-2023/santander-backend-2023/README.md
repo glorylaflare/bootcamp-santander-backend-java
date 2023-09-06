@@ -3,6 +3,7 @@ Java RESTful API criada para a Santander Backend 2023
 
 ## Diagrama de Classes
 
+```mermaid
 classDiagram
 class User {
 - name: String
@@ -31,7 +32,8 @@ class News {
 - url: String
 }
 
-User *-- Account : has
-User *-- Feature : has many
-User *-- Card : has one
-User *-- News : has many
+User "1" *-- "1" Account
+User "1" *-- "N" Feature
+User "1" *-- "1" Card
+User "1" *-- "N" News
+```
