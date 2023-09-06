@@ -9,11 +9,11 @@ import jakarta.persistence.MappedSuperclass;
 public abstract class Base {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
+    private Long id;
     private String icon;
     private String description;
 
-    public long getId() {
+    public Long getId() {
         return id;
     }
 
